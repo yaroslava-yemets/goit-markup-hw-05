@@ -51,7 +51,7 @@
         <!-- Главный заголовок -->
         <section class="hero">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <a href="" class="hero-link link">Заказать услугу</a>
+            <a href="" class="hero-link link" data-modal-open>Заказать услугу</a>
         </section>
 
         <!-- Особенности -->
@@ -114,12 +114,15 @@
                     <ul class="we-do-list">
                         <li class="we-do-item list">
                             <img class="we-do-img" src="./images/what-we-do/box1.jpg" width="370" height="294" alt="руки на клавиатуре">
+                            <p class="we-do-caption" animate__backInUp>Десктопные приложения</p>
                         </li>
                          <li class="we-do-item list">
                             <img class="we-do-img" src="./images/what-we-do/box2.jpg" width="370" height="294" alt="руки держат телефон">
+                            <p class="we-do-caption" animate__backInUp>Мобильные приложения</p>
                         </li>
                          <li class="we-do-item list">
                             <img class="we-do-img" src="./images/what-we-do/box3.jpg" width="370" height="294" alt="планшет с цветовой гаммой">
+                            <p class="we-do-caption">Дизайнерские решения</p>
                         </li>
                     </ul>
                 </div>
@@ -384,5 +387,18 @@
             </div>
         </div>
     </footer>  
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="modal-close-btn" data-modal-close>
+                <svg class="close-icon">
+                    <use href="../images/sprite.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
+
 </body>
 </html>
