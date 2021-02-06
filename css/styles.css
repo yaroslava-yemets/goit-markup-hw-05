@@ -134,7 +134,9 @@ img {
     color: var(--emphasis-color);  
     
     position: relative;
+}
 
+.nav-list-link {
     transition: color 250ms var(--cubic);
 }
 
@@ -181,7 +183,6 @@ img {
 .header-contacts-link {
     display: flex;
     align-items: center;
-    transition: fill;
 }
 
 .header-contacts-link > .number,
@@ -621,13 +622,18 @@ img {
     padding: 6px 22px;
     border-radius: 4px;
 
-    transition: color 250ms var(--cubic), background-color 250ms var(--cubic);
-}
+    transition: color 250ms var(--cubic), 
+    background-color 250ms var(--cubic),
+    box-shadow 250ms var(--cubic);
+} 
  
 .projects-button:hover,
 .projects-button:focus {
     color: #ffffff;
     background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+    0px 1px 2px rgba(0, 0, 0, 0.08), 
+    0px 2px 2px rgba(0, 0, 0, 0.12);
     outline: none;
 }
 
