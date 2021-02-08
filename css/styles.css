@@ -183,7 +183,10 @@ img {
 .header-contacts-link {
     display: flex;
     align-items: center;
+    transition: color 250ms var(--cubic),
+    fill 250ms var(--cubic);
 }
+
 
 .header-contacts-link > .number,
 .header-contacts-link > .mail {
